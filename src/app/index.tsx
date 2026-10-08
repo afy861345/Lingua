@@ -1,21 +1,19 @@
-import { StyleSheet, Text, View } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
+import { Link } from "expo-router";
+import { Pressable, Text, View } from "react-native";
 
-export default function Index() {
+export default function HomeScreen() {
   return (
-    <SafeAreaView style={styles.safeArea}>
-      <View className="flex-1 items-center justify-center">
-        <View className="card items-center gap-3 p-6">
-          <Text className="h1 text-text-primary">index</Text>
-        </View>
-      </View>
-    </SafeAreaView>
-  )
+    <View className="flex-1 items-center justify-center bg-white px-6">
+      <Text className="mb-6 text-center font-[Poppins-Bold] text-3xl text-[#10183b]">
+        muolingo
+      </Text>
+      <Link href="/onboarding" asChild>
+        <Pressable className="rounded-2xl bg-[#563df5] px-8 py-4 active:opacity-80">
+          <Text className="font-[Poppins-SemiBold] text-base text-white">
+            View onboarding
+          </Text>
+        </Pressable>
+      </Link>
+    </View>
+  );
 }
-
-const styles = StyleSheet.create({
-  safeArea: {
-    flex: 1,
-    backgroundColor: '#ffffff',
-  },
-})

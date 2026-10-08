@@ -59,3 +59,135 @@
   border-radius: 16px;
   border-width: 1px;
 }
+
+@utility onboarding-content {
+  flex: 1;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+}
+
+@utility onboarding-brand {
+  margin-top: 12px;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+@utility onboarding-logo {
+  width: 44px;
+  height: 44px;
+}
+
+@utility onboarding-brand-name {
+  font-family: "Poppins-Bold";
+  font-size: 27px;
+  color: #10183b;
+}
+
+@utility onboarding-copy {
+  width: 100%;
+  margin-top: 32px;
+}
+
+@utility onboarding-title {
+  font-family: "Poppins-SemiBold";
+  font-size: 29px;
+  line-height: 1.25;
+  color: #10183b;
+}
+
+@utility onboarding-title-accent {
+  color: #563df5;
+}
+
+@utility onboarding-subtitle {
+  margin-top: 8px;
+  font-family: "Poppins-Regular";
+  font-size: 14px;
+  line-height: 1.6;
+  color: #667085;
+}
+
+@utility onboarding-hero {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+  min-height: 190px;
+  max-height: 340px;
+}
+
+@utility onboarding-bubble {
+  position: absolute;
+  padding: 8px 16px;
+  border-radius: 18px;
+}
+
+@utility onboarding-bubble-text {
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+}
+
+@utility onboarding-hello {
+  left: 0;
+  top: 17%;
+  transform: rotate(-8deg);
+  background-color: #edf6ff;
+}
+
+@utility onboarding-hello-text {
+  color: #10183b;
+}
+
+@utility onboarding-hola {
+  right: 0;
+  top: 12%;
+  transform: rotate(8deg);
+  background-color: #f4f2ff;
+}
+
+@utility onboarding-hola-text {
+  font-family: "Poppins-SemiBold";
+  color: #4529e8;
+}
+
+@utility onboarding-nihao {
+  right: 0;
+  top: 40%;
+  transform: rotate(8deg);
+  background-color: #fff3ee;
+}
+
+@utility onboarding-nihao-text {
+  color: #f04c29;
+}
+
+@utility onboarding-cta {
+  width: 100%;
+  height: 62px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  border-radius: 20px;
+  background-color: #563df5;
+}
+
+@utility onboarding-cta-text {
+  font-family: "Poppins-SemiBold";
+  font-size: 18px;
+  color: #ffffff;
+}
+
+@utility onboarding-cta-arrow {
+  position: absolute;
+  right: 24px;
+  font-family: "Poppins-Regular";
+  font-size: 32px;
+  line-height: 36px;
+  color: #ffffff;
+}
